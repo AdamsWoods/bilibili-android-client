@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,7 +12,6 @@
         android:overScrollMode="never"
         android:paddingTop="@dimen/activity_horizontal_margin"
         android:scrollbars="none" />
-
 
     <com.hotbitmapgg.bilibili.widget.CircleProgressView
         android:id="@+id/circle_progress"
@@ -22,7 +21,6 @@
         android:layout_marginTop="@dimen/default_grow_margin"
         app:matProg_barColor="?attr/colorPrimary"
         app:matProg_barWidth="@dimen/circle_progress_view_default_border_width" />
-
 
 </FrameLayout>
 

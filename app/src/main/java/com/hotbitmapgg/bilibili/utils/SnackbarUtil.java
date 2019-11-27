@@ -1,7 +1,8 @@
 package com.hotbitmapgg.bilibili.utils;
 
-import android.support.design.widget.Snackbar;
 import android.view.View;
+
+import com.google.android.material.snackbar.Snackbar;
 
 /**
  * Created by hcc on 16/8/20 12:18

@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,9 +26,7 @@
             android:textColor="@color/font_normal"
             android:textSize="@dimen/default_small_text_size" />
 
-
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/tv_all_serial"
@@ -43,7 +40,6 @@
         android:text="@string/more_new_bangumi_serial"
         android:textColor="@color/black_alpha_30"
         android:textSize="@dimen/default_tiny_text_size" />
-
 
 </RelativeLayout>
 

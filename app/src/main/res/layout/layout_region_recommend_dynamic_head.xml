@@ -6,7 +6,6 @@
     android:paddingStart="@dimen/default_general_margin"
     android:paddingTop="@dimen/default_general_margin">
 
-
     <ImageView
         android:id="@+id/item_type_img"
         android:layout_width="wrap_content"
@@ -26,7 +25,6 @@
         android:text="@string/all_dynamic"
         android:textColor="@color/font_normal"
         android:textSize="@dimen/default_small_text_size" />
-
 
 </RelativeLayout>
 

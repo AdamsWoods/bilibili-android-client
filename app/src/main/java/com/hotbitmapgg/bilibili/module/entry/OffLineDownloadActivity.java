@@ -1,11 +1,12 @@
 package com.hotbitmapgg.bilibili.module.entry;
 
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.text.format.Formatter;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import androidx.appcompat.widget.Toolbar;
 
 import com.hotbitmapgg.bilibili.base.RxBaseActivity;
 import com.hotbitmapgg.bilibili.utils.CommonUtil;

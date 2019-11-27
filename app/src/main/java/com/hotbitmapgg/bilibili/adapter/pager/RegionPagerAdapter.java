@@ -1,8 +1,8 @@
 package com.hotbitmapgg.bilibili.adapter.pager;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.hotbitmapgg.bilibili.entity.region.RegionTypesInfo;
 import com.hotbitmapgg.bilibili.module.home.region.RegionTypeDetailsFragment;
@@ -21,44 +21,44 @@ import rx.Observable;
  */
 public class RegionPagerAdapter extends FragmentStatePagerAdapter {
 
-  private int rid;
-  private List<String> titles;
-  private List<RegionTypesInfo.DataBean.ChildrenBean> childrens;
-  private List<Fragment> fragments = new ArrayList<>();
+    private int rid;
+    private List<String> titles;
+    private List<RegionTypesInfo.DataBean.ChildrenBean> childrens;
+    private List<Fragment> fragments = new ArrayList<>();
 
-  public RegionPagerAdapter(FragmentManager fm, int rid, List<String> titles,
-                            List<RegionTypesInfo.DataBean.ChildrenBean> childrens) {
+    public RegionPagerAdapter(FragmentManager fm, int rid, List<String> titles,
+                              List<RegionTypesInfo.DataBean.ChildrenBean> childrens) {
 
-    super(fm);
-    this.rid = rid;
-    this.titles = titles;
-    this.childrens = childrens;
-    initFragments();
-  }
-
-
-  private void initFragments() {
-    fragments.add(RegionTypeRecommendFragment.newInstance(rid));
-    Observable.from(childrens)
-        .subscribe(childrenBean -> fragments.add(RegionTypeDetailsFragment.
-            newInstance(childrenBean.getTid())));
-  }
+        super(fm);
+        this.rid = rid;
+        this.titles = titles;
+        this.childrens = childrens;
+        initFragments();
+    }
 
 
-  @Override
-  public Fragment getItem(int position) {
-    return fragments.get(position);
-  }
+    private void initFragments() {
+        fragments.add(RegionTypeRecommendFragment.newInstance(rid));
+        Observable.from(childrens)
+                .subscribe(childrenBean -> fragments.add(RegionTypeDetailsFragment.
+                        newInstance(childrenBean.getTid())));
+    }
 
 
-  @Override
-  public int getCount() {
-    return fragments.size();
-  }
+    @Override
+    public Fragment getItem(int position) {
+        return fragments.get(position);
+    }
 
 
-  @Override
-  public CharSequence getPageTitle(int position) {
-    return titles.get(position);
-  }
+    @Override
+    public int getCount() {
+        return fragments.size();
+    }
+
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return titles.get(position);
+    }
 }

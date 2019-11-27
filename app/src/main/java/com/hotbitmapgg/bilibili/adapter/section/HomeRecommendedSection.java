@@ -5,8 +5,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
@@ -19,17 +17,20 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.hotbitmapgg.bilibili.entity.recommend.RecommendInfo;
-import com.hotbitmapgg.bilibili.module.home.live.LivePlayerActivity;
-import com.hotbitmapgg.ohmybilibili.R;
 import com.hotbitmapgg.bilibili.module.home.bangumi.BangumiIndexActivity;
 import com.hotbitmapgg.bilibili.module.home.bangumi.BangumiScheduleActivity;
 import com.hotbitmapgg.bilibili.module.home.discover.OriginalRankActivity;
+import com.hotbitmapgg.bilibili.module.home.live.LivePlayerActivity;
 import com.hotbitmapgg.bilibili.module.video.VideoDetailsActivity;
 import com.hotbitmapgg.bilibili.utils.DisplayUtil;
 import com.hotbitmapgg.bilibili.widget.sectioned.StatelessSection;
+import com.hotbitmapgg.ohmybilibili.R;
 
 import java.util.ArrayList;
 import java.util.List;

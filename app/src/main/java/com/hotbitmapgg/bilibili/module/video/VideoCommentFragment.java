@@ -1,10 +1,11 @@
 package com.hotbitmapgg.bilibili.module.video;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.hotbitmapgg.bilibili.adapter.VideoCommentAdapter;
 import com.hotbitmapgg.bilibili.adapter.VideoHotCommentAdapter;

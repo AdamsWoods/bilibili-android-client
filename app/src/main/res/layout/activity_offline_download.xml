@@ -107,7 +107,6 @@
                     android:textColor="@color/font_normal"
                     android:textSize="@dimen/default_small_text_size" />
 
-
                 <ImageView
                     android:id="@+id/download_refresh"
                     android:layout_width="wrap_content"

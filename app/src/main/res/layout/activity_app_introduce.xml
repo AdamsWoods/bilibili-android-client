@@ -136,11 +136,6 @@
                 android:text="@string/about_feedback"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/default_small_text_size" />
-
-
         </RelativeLayout>
-
-
     </RelativeLayout>
-
 </LinearLayout>

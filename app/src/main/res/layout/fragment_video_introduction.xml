@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:overScrollMode="never">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,7 +37,6 @@
             android:paddingEnd="@dimen/default_general_margin"
             android:paddingStart="@dimen/default_general_margin">
 
-
             <ImageView
                 android:layout_width="@dimen/video_info_mini_icons_size"
                 android:layout_height="@dimen/video_info_mini_icons_size"
@@ -71,7 +69,6 @@
                 android:textColor="@color/black_alpha_45"
                 android:textSize="@dimen/default_tiny_text_size" />
         </LinearLayout>
-
 
         <Space
             android:layout_width="match_parent"
@@ -125,9 +122,7 @@
                     android:textColor="@color/font_normal"
                     android:textSize="@dimen/default_tiny_text_size" />
 
-
             </LinearLayout>
-
 
             <LinearLayout
                 android:id="@+id/btn_coin"
@@ -158,9 +153,7 @@
                     android:textColor="@color/font_normal"
                     android:textSize="@dimen/default_tiny_text_size" />
 
-
             </LinearLayout>
-
 
             <LinearLayout
                 android:id="@+id/btn_fav"
@@ -191,7 +184,6 @@
                     android:textColor="@color/font_normal"
                     android:textSize="@dimen/default_tiny_text_size" />
 
-
             </LinearLayout>
 
             <LinearLayout
@@ -221,7 +213,6 @@
                     android:text="@string/cache"
                     android:textColor="@color/font_normal"
                     android:textSize="@dimen/default_tiny_text_size" />
-
 
             </LinearLayout>
 
@@ -263,7 +254,6 @@
 
         <include layout="@layout/layout_user_chase_bangumi_head" />
 
-
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_height"
@@ -273,7 +263,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -281,7 +270,6 @@
                 android:text="@string/about_tag"
                 android:textColor="@color/font_normal"
                 android:textSize="@dimen/default_small_text_size" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -292,9 +280,7 @@
                 android:textColor="@color/black_alpha_45"
                 android:textSize="@dimen/default_tiny_text_size" />
 
-
         </RelativeLayout>
-
 
         <com.zhy.view.flowlayout.TagFlowLayout
             android:id="@+id/tags_layout"
@@ -314,7 +300,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -325,8 +310,7 @@
 
         </RelativeLayout>
 
-
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -334,8 +318,5 @@
             android:overScrollMode="never"
             android:scrollbars="none" />
 
-
     </LinearLayout>
-
-
-</android.support.v4.widget.NestedScrollView>
+</androidx.core.widget.NestedScrollView>

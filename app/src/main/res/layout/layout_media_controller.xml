@@ -8,7 +8,6 @@
         android:layout_height="@dimen/action_bar_default_height"
         android:background="@color/media_controller_bg">
 
-
         <ImageView
             android:id="@+id/media_controller_back"
             android:layout_width="wrap_content"
@@ -33,7 +32,6 @@
 
     </RelativeLayout>
 
-
     <ImageView
         android:id="@+id/media_controller_tv_play"
         android:layout_width="wrap_content"
@@ -43,7 +41,6 @@
         android:layout_marginEnd="@dimen/default_general_margin"
         android:padding="@dimen/default_general_margin"
         android:src="@drawable/ic_tv_play" />
-
 
     <LinearLayout
         android:id="@+id/media_controller_controls"
@@ -58,7 +55,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-
             <SeekBar
                 android:id="@+id/media_controller_seekbar"
                 android:layout_width="match_parent"
@@ -72,9 +68,7 @@
                 android:progressDrawable="@color/colorPrimary"
                 android:thumb="@drawable/videoplayer_erect_icon_round" />
 
-
         </RelativeLayout>
-
 
         <RelativeLayout
             android:id="@+id/media_controller_controls_buttons"
@@ -95,7 +89,6 @@
                 android:background="@null"
                 android:gravity="center"
                 android:src="@drawable/bili_player_play_can_play" />
-
 
             <TextView
                 android:id="@+id/media_controller_time_current"
@@ -120,7 +113,6 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/default_tiny_text_size" />
 
-
             <TextView
                 android:id="@+id/media_controller_time_total"
                 android:layout_width="wrap_content"
@@ -130,7 +122,6 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/default_tiny_text_size"
                 android:textStyle="bold" />
-
 
             <LinearLayout
                 android:id="@+id/media_controller_danmaku_layout"
@@ -161,7 +152,6 @@
 
             </LinearLayout>
 
-
             <LinearLayout
                 android:id="@+id/media_controller_controls_quality_layout"
                 android:layout_width="wrap_content"
@@ -188,9 +178,7 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/default_tiny_text_size" />
 
-
             </LinearLayout>
-
 
             <LinearLayout
                 android:id="@+id/media_controller_controls_lock_layout"
@@ -218,12 +206,7 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/default_tiny_text_size" />
 
-
             </LinearLayout>
-
-
         </RelativeLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

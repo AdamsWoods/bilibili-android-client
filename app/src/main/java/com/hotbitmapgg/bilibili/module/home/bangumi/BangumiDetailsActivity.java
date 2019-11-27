@@ -5,12 +5,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +12,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.widget.NestedScrollView;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -32,13 +33,13 @@ import com.hotbitmapgg.bilibili.entity.bangumi.BangumiDetailsCommentInfo;
 import com.hotbitmapgg.bilibili.entity.bangumi.BangumiDetailsInfo;
 import com.hotbitmapgg.bilibili.entity.bangumi.BangumiDetailsRecommendInfo;
 import com.hotbitmapgg.bilibili.module.video.VideoDetailsActivity;
+import com.hotbitmapgg.bilibili.network.RetrofitHelper;
 import com.hotbitmapgg.bilibili.utils.ConstantUtil;
 import com.hotbitmapgg.bilibili.utils.LogUtil;
 import com.hotbitmapgg.bilibili.utils.NumberUtil;
 import com.hotbitmapgg.bilibili.utils.SystemBarHelper;
 import com.hotbitmapgg.bilibili.widget.CircleProgressView;
 import com.hotbitmapgg.ohmybilibili.R;
-import com.hotbitmapgg.bilibili.network.RetrofitHelper;
 import com.zhy.view.flowlayout.FlowLayout;
 import com.zhy.view.flowlayout.TagAdapter;
 import com.zhy.view.flowlayout.TagFlowLayout;
@@ -168,7 +169,8 @@ public class BangumiDetailsActivity extends RxBaseActivity {
         //设置背景高斯模糊图片
         Glide.with(this)
                 .load(result.getCover())
-                .bitmapTransform(new BlurTransformation(this))
+                .transform(new BlurTransformation(this))
+//                .bitmapTransform(new BlurTransformation(this))
                 .into(mBangumiBackgroundImage);
         //设置番剧标题
         mBangumiTitle.setText(result.getTitle());

@@ -6,8 +6,8 @@ import com.hotbitmapgg.bilibili.entity.region.RegionDetailsInfo;
 import com.hotbitmapgg.bilibili.entity.region.RegionRecommendInfo;
 import com.hotbitmapgg.bilibili.entity.search.SearchArchiveInfo;
 import com.hotbitmapgg.bilibili.entity.search.SearchBangumiInfo;
-import com.hotbitmapgg.bilibili.entity.search.SearchSpInfo;
 import com.hotbitmapgg.bilibili.entity.search.SearchMovieInfo;
+import com.hotbitmapgg.bilibili.entity.search.SearchSpInfo;
 import com.hotbitmapgg.bilibili.entity.search.SearchUpperInfo;
 import com.hotbitmapgg.bilibili.entity.video.VideoDetailsInfo;
 

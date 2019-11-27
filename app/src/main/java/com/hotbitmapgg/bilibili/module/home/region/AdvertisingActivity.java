@@ -1,27 +1,28 @@
 package com.hotbitmapgg.bilibili.module.home.region;
 
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.hotbitmapgg.bilibili.adapter.section.RegionRecommendBannerSection;
 import com.hotbitmapgg.bilibili.adapter.section.RegionRecommendDynamicSection;
 import com.hotbitmapgg.bilibili.adapter.section.RegionRecommendHotSection;
 import com.hotbitmapgg.bilibili.adapter.section.RegionRecommendNewSection;
 import com.hotbitmapgg.bilibili.base.RxBaseActivity;
 import com.hotbitmapgg.bilibili.entity.region.RegionRecommendInfo;
+import com.hotbitmapgg.bilibili.network.RetrofitHelper;
 import com.hotbitmapgg.bilibili.utils.ConstantUtil;
 import com.hotbitmapgg.bilibili.utils.LogUtil;
+import com.hotbitmapgg.bilibili.utils.ToastUtil;
 import com.hotbitmapgg.bilibili.widget.banner.BannerEntity;
 import com.hotbitmapgg.bilibili.widget.sectioned.SectionedRecyclerViewAdapter;
 import com.hotbitmapgg.ohmybilibili.R;
-import com.hotbitmapgg.bilibili.adapter.section.RegionRecommendBannerSection;
-import com.hotbitmapgg.bilibili.network.RetrofitHelper;
-import com.hotbitmapgg.bilibili.utils.ToastUtil;
 
 import java.util.ArrayList;
 import java.util.List;

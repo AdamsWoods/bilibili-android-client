@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="@dimen/discover_card_view_height"
@@ -23,7 +23,6 @@
             app:cardCornerRadius="@dimen/line_height"
             app:cardElevation="@dimen/app_bar_default_elevation">
 
-
             <ImageView
                 android:id="@+id/search_scan"
                 android:layout_width="wrap_content"
@@ -32,7 +31,6 @@
                 android:layout_marginStart="@dimen/default_general_margin"
                 android:src="@drawable/ic_hint_search"
                 android:tint="@color/gray_20" />
-
 
             <TextView
                 android:id="@+id/search_edit"
@@ -47,7 +45,6 @@
                 android:textColor="@color/black_alpha_45"
                 android:textSize="@dimen/default_small_text_size" />
 
-
             <ImageView
                 android:id="@+id/search_img"
                 android:layout_width="wrap_content"
@@ -58,9 +55,7 @@
                 android:src="@drawable/ic_scan"
                 android:tint="@color/gray_20" />
 
-
-        </android.support.v7.widget.CardView>
-
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:layout_width="wrap_content"
@@ -78,14 +73,12 @@
             android:layout_marginStart="@dimen/default_tiny_padding"
             app:max_select="-1" />
 
-
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
             android:id="@+id/hide_scroll_view"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:overScrollMode="never"
             android:visibility="gone">
-
 
             <com.zhy.view.flowlayout.TagFlowLayout
                 android:id="@+id/hide_tags_layout"
@@ -95,8 +88,7 @@
                 android:layout_marginStart="@dimen/default_tiny_padding"
                 app:max_select="-1" />
 
-        </android.support.v4.widget.NestedScrollView>
-
+        </androidx.core.widget.NestedScrollView>
 
         <LinearLayout
             android:id="@+id/more_layout"
@@ -134,9 +126,7 @@
                 android:layout_weight="1"
                 android:background="@color/gray_light" />
 
-
         </LinearLayout>
-
 
         <RelativeLayout
             android:id="@+id/ic_quanzi_layout"
@@ -155,7 +145,6 @@
                 android:layout_marginStart="@dimen/default_general_margin"
                 android:src="@drawable/ic_quanzi" />
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -166,14 +155,12 @@
                 android:textColor="@color/font_normal"
                 android:textSize="@dimen/default_small_text_size" />
 
-
         </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_height"
             android:background="@color/window_background" />
-
 
         <RelativeLayout
             android:id="@+id/topic_center_layout"
@@ -191,7 +178,6 @@
                 android:layout_marginStart="@dimen/default_general_margin"
                 android:src="@drawable/ic_header_topic_center" />
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -202,15 +188,12 @@
                 android:textColor="@color/font_normal"
                 android:textSize="@dimen/default_small_text_size" />
 
-
         </RelativeLayout>
-
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_height"
             android:background="@color/window_background" />
-
 
         <RelativeLayout
             android:id="@+id/activity_center_layout"
@@ -228,7 +211,6 @@
                 android:layout_marginStart="@dimen/default_general_margin"
                 android:src="@drawable/ic_header_activity_center" />
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -239,9 +221,7 @@
                 android:textColor="@color/font_normal"
                 android:textSize="@dimen/default_small_text_size" />
 
-
         </RelativeLayout>
-
 
         <RelativeLayout
             android:id="@+id/layout_original"
@@ -260,7 +240,6 @@
                 android:layout_marginStart="@dimen/default_general_margin"
                 android:src="@drawable/ic_btn_rank_original" />
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -271,7 +250,6 @@
                 android:textColor="@color/font_normal"
                 android:textSize="@dimen/default_small_text_size" />
 
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -280,14 +258,12 @@
                 android:layout_marginEnd="@dimen/default_general_margin"
                 android:src="@drawable/ic_gray_arrow_right" />
 
-
         </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_height"
             android:background="@color/window_background" />
-
 
         <RelativeLayout
             android:id="@+id/layout_all_rank"
@@ -304,7 +280,6 @@
                 android:layout_centerInParent="true"
                 android:layout_marginStart="@dimen/default_general_margin"
                 android:src="@drawable/ic_btn_rank_all" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -324,9 +299,7 @@
                 android:layout_marginEnd="@dimen/default_general_margin"
                 android:src="@drawable/ic_gray_arrow_right" />
 
-
         </RelativeLayout>
-
 
         <RelativeLayout
             android:id="@+id/layout_game_center"
@@ -345,7 +318,6 @@
                 android:layout_marginStart="@dimen/default_general_margin"
                 android:src="@drawable/ic_btn_game" />
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -363,7 +335,6 @@
             android:layout_height="@dimen/line_height"
             android:background="@color/window_background" />
 
-
         <RelativeLayout
             android:id="@+id/layout_shop"
             android:layout_width="match_parent"
@@ -379,7 +350,6 @@
                 android:layout_centerInParent="true"
                 android:layout_marginStart="@dimen/default_general_margin"
                 android:src="@drawable/ic_btn_shop" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -399,8 +369,6 @@
                 android:layout_marginEnd="@dimen/default_general_margin"
                 android:src="@drawable/ic_gray_arrow_right" />
 
-
         </RelativeLayout>
-
     </LinearLayout>
-</android.support.v4.widget.NestedScrollView>
+</androidx.core.widget.NestedScrollView>

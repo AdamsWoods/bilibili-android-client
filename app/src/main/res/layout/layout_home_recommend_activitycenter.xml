@@ -30,7 +30,6 @@
             android:textColor="@color/font_normal"
             android:textSize="@dimen/default_small_text_size" />
 
-
         <TextView
             android:id="@+id/item_type_more"
             android:layout_width="wrap_content"
@@ -44,18 +43,17 @@
             android:textSize="@dimen/default_tiny_text_size"
             android:visibility="visible" />
 
-
     </RelativeLayout>
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:overScrollMode="never"
         android:scrollbars="none">
 
+    </androidx.recyclerview.widget.RecyclerView>
 
-    </android.support.v7.widget.RecyclerView>
 </LinearLayout>
 
 

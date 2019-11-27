@@ -6,7 +6,6 @@
     android:paddingStart="@dimen/default_general_margin"
     android:paddingTop="@dimen/default_general_margin">
 
-
     <ImageView
         android:id="@+id/item_type_img"
         android:layout_width="@dimen/home_recommend_head_image_size"
@@ -25,7 +24,6 @@
         android:textColor="@color/font_normal"
         android:textSize="@dimen/default_small_text_size" />
 
-
     <TextView
         android:id="@+id/item_type_rank_btn"
         android:layout_width="wrap_content"
@@ -40,7 +38,6 @@
         android:textColor="@color/white"
         android:textSize="@dimen/default_tiny_text_size"
         android:visibility="gone" />
-
 
     <TextView
         android:id="@+id/item_live_all_num"
@@ -65,5 +62,6 @@
         android:textColor="@color/white"
         android:textSize="@dimen/default_tiny_text_size"
         android:visibility="visible" />
+
 </RelativeLayout>
 

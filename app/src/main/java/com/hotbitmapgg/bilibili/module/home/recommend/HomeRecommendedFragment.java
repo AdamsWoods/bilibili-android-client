@@ -1,27 +1,28 @@
 package com.hotbitmapgg.bilibili.module.home.recommend;
 
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
 
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.hotbitmapgg.bilibili.adapter.section.HomeRecommendActivityCenterSection;
 import com.hotbitmapgg.bilibili.adapter.section.HomeRecommendBannerSection;
+import com.hotbitmapgg.bilibili.adapter.section.HomeRecommendPicSection;
 import com.hotbitmapgg.bilibili.adapter.section.HomeRecommendTopicSection;
 import com.hotbitmapgg.bilibili.adapter.section.HomeRecommendedSection;
 import com.hotbitmapgg.bilibili.base.RxLazyFragment;
+import com.hotbitmapgg.bilibili.entity.recommend.RecommendBannerInfo;
 import com.hotbitmapgg.bilibili.entity.recommend.RecommendInfo;
+import com.hotbitmapgg.bilibili.network.RetrofitHelper;
 import com.hotbitmapgg.bilibili.utils.ConstantUtil;
+import com.hotbitmapgg.bilibili.utils.SnackbarUtil;
 import com.hotbitmapgg.bilibili.widget.CustomEmptyView;
 import com.hotbitmapgg.bilibili.widget.banner.BannerEntity;
 import com.hotbitmapgg.bilibili.widget.sectioned.SectionedRecyclerViewAdapter;
 import com.hotbitmapgg.ohmybilibili.R;
-import com.hotbitmapgg.bilibili.adapter.section.HomeRecommendActivityCenterSection;
-import com.hotbitmapgg.bilibili.adapter.section.HomeRecommendPicSection;
-import com.hotbitmapgg.bilibili.entity.recommend.RecommendBannerInfo;
-import com.hotbitmapgg.bilibili.network.RetrofitHelper;
-import com.hotbitmapgg.bilibili.utils.SnackbarUtil;
 
 import java.util.ArrayList;
 import java.util.List;

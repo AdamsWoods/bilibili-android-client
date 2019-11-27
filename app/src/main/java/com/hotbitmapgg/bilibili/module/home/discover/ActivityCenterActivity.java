@@ -1,14 +1,15 @@
 package com.hotbitmapgg.bilibili.module.home.discover;
 
 import android.os.Bundle;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.hotbitmapgg.bilibili.adapter.ActivityCenterAdapter;
 import com.hotbitmapgg.bilibili.adapter.helper.EndlessRecyclerOnScrollListener;
@@ -16,9 +17,9 @@ import com.hotbitmapgg.bilibili.adapter.helper.HeaderViewRecyclerAdapter;
 import com.hotbitmapgg.bilibili.base.RxBaseActivity;
 import com.hotbitmapgg.bilibili.entity.discover.ActivityCenterInfo;
 import com.hotbitmapgg.bilibili.module.common.BrowserActivity;
+import com.hotbitmapgg.bilibili.network.RetrofitHelper;
 import com.hotbitmapgg.bilibili.utils.ToastUtil;
 import com.hotbitmapgg.ohmybilibili.R;
-import com.hotbitmapgg.bilibili.network.RetrofitHelper;
 
 import java.util.ArrayList;
 import java.util.List;

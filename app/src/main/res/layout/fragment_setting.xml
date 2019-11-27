@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <include layout="@layout/layout_toolbar" />
 
     <com.hotbitmapgg.bilibili.widget.SpringScrollView
@@ -18,7 +17,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <RelativeLayout
                 android:id="@+id/layout_about_me"
                 android:layout_width="match_parent"
@@ -26,7 +24,6 @@
                 android:layout_marginTop="@dimen/default_grow_margin"
                 android:background="@color/card_view_background"
                 android:foreground="?attr/selectableItemBackground">
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -52,14 +49,12 @@
                 android:layout_height="1dp"
                 android:background="@color/line_bg" />
 
-
             <RelativeLayout
                 android:id="@+id/layout_about_app"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/user_tag_view_height"
                 android:background="@color/card_view_background"
                 android:foreground="?attr/selectableItemBackground">
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -78,8 +73,8 @@
                     android:layout_centerInParent="true"
                     android:layout_marginEnd="@dimen/default_grow_margin"
                     android:src="@drawable/register_bottom_arrow" />
-            </RelativeLayout>
 
+            </RelativeLayout>
 
             <RelativeLayout
                 android:id="@+id/layout_update"
@@ -112,7 +107,6 @@
 
             </RelativeLayout>
 
-
             <Button
                 android:id="@+id/btn_logout"
                 android:layout_width="match_parent"
@@ -128,5 +122,4 @@
                 android:textSize="@dimen/default_medium_text_size" />
         </LinearLayout>
     </com.hotbitmapgg.bilibili.widget.SpringScrollView>
-
 </LinearLayout>

@@ -1,10 +1,10 @@
 package com.hotbitmapgg.bilibili.media.danmuku;
 
-import java.util.zip.Deflater;
-import java.util.zip.Inflater;
-import java.util.zip.DataFormatException;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.zip.DataFormatException;
+import java.util.zip.Deflater;
+import java.util.zip.Inflater;
 
 /**
  * Created by hcc on 16/8/4 21:18

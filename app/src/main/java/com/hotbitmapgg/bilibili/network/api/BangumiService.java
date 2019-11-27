@@ -1,11 +1,11 @@
 package com.hotbitmapgg.bilibili.network.api;
 
-import com.hotbitmapgg.bilibili.entity.bangumi.BangumiRecommendInfo;
-import com.hotbitmapgg.bilibili.entity.bangumi.BangumiScheduleInfo;
 import com.hotbitmapgg.bilibili.entity.bangumi.BangumiAppIndexInfo;
 import com.hotbitmapgg.bilibili.entity.bangumi.BangumiDetailsInfo;
 import com.hotbitmapgg.bilibili.entity.bangumi.BangumiDetailsRecommendInfo;
 import com.hotbitmapgg.bilibili.entity.bangumi.BangumiIndexInfo;
+import com.hotbitmapgg.bilibili.entity.bangumi.BangumiRecommendInfo;
+import com.hotbitmapgg.bilibili.entity.bangumi.BangumiScheduleInfo;
 import com.hotbitmapgg.bilibili.entity.bangumi.SeasonNewBangumiInfo;
 
 import retrofit2.http.GET;

@@ -107,7 +107,6 @@
         android:layout_height="@dimen/live_user_layout_height"
         android:background="@color/card_view_background">
 
-
         <com.hotbitmapgg.bilibili.widget.CircleImageView
             android:id="@+id/user_pic"
             android:layout_width="@dimen/user_avatar_size"
@@ -160,6 +159,5 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_height"
         android:background="@color/line_bg" />
-
 
 </LinearLayout>

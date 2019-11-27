@@ -1,9 +1,10 @@
 package com.hotbitmapgg.bilibili.adapter.section;
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.hotbitmapgg.bilibili.adapter.ActivityCenterRecyclerAdapter;
 import com.hotbitmapgg.bilibili.entity.recommend.RecommendInfo;

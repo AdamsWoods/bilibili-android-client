@@ -23,11 +23,11 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
+import com.hotbitmapgg.bilibili.media.callback.DanmukuSwitchListener;
 import com.hotbitmapgg.bilibili.media.callback.MediaPlayerListener;
+import com.hotbitmapgg.bilibili.media.callback.VideoBackListener;
 import com.hotbitmapgg.bilibili.utils.LogUtil;
 import com.hotbitmapgg.ohmybilibili.R;
-import com.hotbitmapgg.bilibili.media.callback.DanmukuSwitchListener;
-import com.hotbitmapgg.bilibili.media.callback.VideoBackListener;
 
 import java.util.Locale;
 

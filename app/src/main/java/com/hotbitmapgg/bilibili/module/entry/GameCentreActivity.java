@@ -2,27 +2,28 @@ package com.hotbitmapgg.bilibili.module.entry;
 
 import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.gson.Gson;
-import com.hotbitmapgg.bilibili.base.RxBaseActivity;
-import com.hotbitmapgg.bilibili.widget.CircleProgressView;
-import com.hotbitmapgg.ohmybilibili.R;
 import com.hotbitmapgg.bilibili.adapter.GameCentreAdapter;
 import com.hotbitmapgg.bilibili.adapter.helper.HeaderViewRecyclerAdapter;
+import com.hotbitmapgg.bilibili.base.RxBaseActivity;
 import com.hotbitmapgg.bilibili.entity.discover.GameCenterInfo;
 import com.hotbitmapgg.bilibili.entity.discover.VipGameInfo;
 import com.hotbitmapgg.bilibili.module.common.BrowserActivity;
 import com.hotbitmapgg.bilibili.network.RetrofitHelper;
+import com.hotbitmapgg.bilibili.widget.CircleProgressView;
+import com.hotbitmapgg.ohmybilibili.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,20 +1,21 @@
 package com.hotbitmapgg.bilibili.module.home.bangumi;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.hotbitmapgg.bilibili.adapter.section.SeasonNewBangumiSection;
 import com.hotbitmapgg.bilibili.base.RxBaseActivity;
+import com.hotbitmapgg.bilibili.entity.bangumi.SeasonNewBangumiInfo;
+import com.hotbitmapgg.bilibili.network.RetrofitHelper;
 import com.hotbitmapgg.bilibili.widget.CircleProgressView;
 import com.hotbitmapgg.bilibili.widget.sectioned.SectionedRecyclerViewAdapter;
 import com.hotbitmapgg.ohmybilibili.R;
-import com.hotbitmapgg.bilibili.adapter.section.SeasonNewBangumiSection;
-import com.hotbitmapgg.bilibili.entity.bangumi.SeasonNewBangumiInfo;
-import com.hotbitmapgg.bilibili.network.RetrofitHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -65,7 +66,7 @@ public class SeasonNewBangumiActivity extends RxBaseActivity {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(seasonNewBangumiInfo -> {
-                    results.addAll(seasonNewBangumiInfo.getResult().subList(0,50));
+                    results.addAll(seasonNewBangumiInfo.getResult().subList(0, 50));
                     finishTask();
                 }, throwable -> hideProgressBar());
     }

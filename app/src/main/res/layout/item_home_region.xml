@@ -21,5 +21,6 @@
         android:layout_marginTop="@dimen/default_tiny_padding"
         android:textColor="@color/font_normal"
         android:textSize="@dimen/default_small_text_size" />
+
 </LinearLayout>
 

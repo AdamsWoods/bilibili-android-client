@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textSize="@dimen/default_tiny_text_size" />
+
     </FrameLayout>
 </FrameLayout>
 

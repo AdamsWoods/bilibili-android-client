@@ -3,20 +3,21 @@ package com.hotbitmapgg.bilibili.module.home.discover;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.widget.NestedScrollView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.hotbitmapgg.bilibili.entity.discover.HotSearchTag;
-import com.hotbitmapgg.bilibili.module.entry.GameCentreActivity;
-import com.hotbitmapgg.bilibili.utils.ConstantUtil;
-import com.hotbitmapgg.ohmybilibili.R;
+import androidx.core.widget.NestedScrollView;
+
 import com.hotbitmapgg.bilibili.base.RxLazyFragment;
+import com.hotbitmapgg.bilibili.entity.discover.HotSearchTag;
 import com.hotbitmapgg.bilibili.module.common.BrowserActivity;
+import com.hotbitmapgg.bilibili.module.entry.GameCentreActivity;
 import com.hotbitmapgg.bilibili.module.search.TotalStationSearchActivity;
 import com.hotbitmapgg.bilibili.network.RetrofitHelper;
+import com.hotbitmapgg.bilibili.utils.ConstantUtil;
+import com.hotbitmapgg.ohmybilibili.R;
 import com.zhy.view.flowlayout.FlowLayout;
 import com.zhy.view.flowlayout.TagAdapter;
 import com.zhy.view.flowlayout.TagFlowLayout;

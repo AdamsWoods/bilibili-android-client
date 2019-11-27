@@ -1,7 +1,8 @@
 package com.hotbitmapgg.bilibili.widget.sectioned;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by hcc on 16/8/27 11:51

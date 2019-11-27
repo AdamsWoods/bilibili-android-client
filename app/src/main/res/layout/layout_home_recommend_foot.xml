@@ -17,7 +17,6 @@
         android:textSize="@dimen/default_small_text_size"
         android:visibility="visible" />
 
-
     <LinearLayout
         android:id="@+id/item_refresh_layout"
         android:layout_width="wrap_content"
@@ -48,7 +47,6 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/item_recommend_refresh_layout"
         android:layout_width="wrap_content"
@@ -78,7 +76,6 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/item_bangumi_layout"
         android:layout_width="match_parent"
@@ -87,7 +84,6 @@
         android:paddingEnd="@dimen/default_tiny_padding"
         android:paddingStart="@dimen/default_tiny_padding"
         android:visibility="gone">
-
 
         <ImageView
             android:id="@+id/item_btn_bangumi_timeline"
@@ -102,7 +98,6 @@
             android:layout_width="@dimen/default_general_margin"
             android:layout_height="wrap_content" />
 
-
         <ImageView
             android:id="@+id/item_btn_bangumi_index"
             android:layout_width="match_parent"
@@ -113,6 +108,4 @@
             android:src="@drawable/bangumi_index_text" />
 
     </LinearLayout>
-
-
 </RelativeLayout>

@@ -1,4 +1,3 @@
-
 package com.hotbitmapgg.bilibili.media;
 
 import android.annotation.TargetApi;

@@ -39,7 +39,6 @@
             app:border_color="@android:color/white"
             app:border_width="1dp" />
 
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +53,6 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_navigation_header_notification" />
 
-
             <ImageView
                 android:id="@+id/iv_head_switch_mode"
                 android:layout_width="wrap_content"
@@ -62,9 +60,7 @@
                 android:layout_marginStart="@dimen/default_grow_margin"
                 android:src="@drawable/ic_switch_night" />
 
-
         </LinearLayout>
-
 
         <LinearLayout
             android:id="@+id/subtitle_layout"
@@ -76,7 +72,6 @@
             android:background="?attr/selectableItemBackground"
             android:orientation="vertical"
             android:paddingTop="@dimen/default_tiny_padding">
-
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -105,7 +100,6 @@
 
             </LinearLayout>
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -124,10 +118,6 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/navigation_subtitle_secondary_text_size" />
 
-
         </LinearLayout>
-
     </RelativeLayout>
-
-
 </FrameLayout>

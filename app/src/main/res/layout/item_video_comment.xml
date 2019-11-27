@@ -26,7 +26,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-
     </LinearLayout>
 
     <RelativeLayout
@@ -83,7 +82,6 @@
             android:textColor="@color/black_alpha_45"
             android:textSize="@dimen/default_tiny_text_size" />
 
-
         <TextView
             android:id="@+id/item_comment_spot"
             android:layout_width="wrap_content"
@@ -104,7 +102,6 @@
             android:paddingTop="1dp"
             android:src="@drawable/ic_more_grey" />
 
-
         <TextView
             android:id="@+id/item_comment_content"
             android:layout_width="wrap_content"
@@ -116,7 +113,6 @@
             android:textColor="@color/font_normal"
             android:textSize="@dimen/default_small_text_size" />
 
-
     </RelativeLayout>
 
     <View
@@ -125,6 +121,5 @@
         android:layout_height="@dimen/line_height"
         android:layout_alignParentBottom="true"
         android:background="@color/line_bg" />
-
 
 </RelativeLayout>

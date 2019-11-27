@@ -19,5 +19,6 @@
         android:layout_marginTop="@dimen/default_tiny_margin"
         android:textColor="@color/font_normal"
         android:textSize="10sp" />
+
 </LinearLayout>
 

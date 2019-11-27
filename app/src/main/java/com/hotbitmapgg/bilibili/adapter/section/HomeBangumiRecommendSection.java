@@ -3,15 +3,16 @@ package com.hotbitmapgg.bilibili.adapter.section;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.hotbitmapgg.bilibili.adapter.HomeBangumiRecommendAdapter;
 import com.hotbitmapgg.bilibili.entity.bangumi.BangumiRecommendInfo;
-import com.hotbitmapgg.ohmybilibili.R;
 import com.hotbitmapgg.bilibili.module.common.BrowserActivity;
 import com.hotbitmapgg.bilibili.widget.sectioned.StatelessSection;
+import com.hotbitmapgg.ohmybilibili.R;
 
 import java.util.List;
 

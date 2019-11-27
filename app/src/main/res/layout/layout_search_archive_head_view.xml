@@ -4,7 +4,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/tab_layout_default_height"
@@ -41,7 +40,6 @@
 
         </LinearLayout>
 
-
         <LinearLayout
             android:id="@+id/search_duration_layout"
             android:layout_width="match_parent"
@@ -70,7 +68,6 @@
 
         </LinearLayout>
 
-
         <LinearLayout
             android:id="@+id/search_region_layout"
             android:layout_width="match_parent"
@@ -98,17 +95,13 @@
                 android:src="@drawable/ic_bangumi_index_close" />
 
         </LinearLayout>
-
-
     </LinearLayout>
 
-
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/search_archive_bangumi_head_recycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:overScrollMode="never"
         android:scrollbars="none" />
-
 
 </LinearLayout>

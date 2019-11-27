@@ -2,19 +2,20 @@ package com.hotbitmapgg.bilibili.adapter.section;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.hotbitmapgg.bilibili.entity.region.RegionDetailsInfo;
 import com.hotbitmapgg.bilibili.module.video.VideoDetailsActivity;
-import com.hotbitmapgg.ohmybilibili.R;
 import com.hotbitmapgg.bilibili.utils.NumberUtil;
 import com.hotbitmapgg.bilibili.widget.sectioned.StatelessSection;
+import com.hotbitmapgg.ohmybilibili.R;
 
 import java.util.List;
 
