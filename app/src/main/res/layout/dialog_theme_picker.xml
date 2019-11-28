@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <androidx.appcompat.widget.DialogTitle
-        android:id="@+id/title"
+        android:id="@+id/tv_title"
         style="?android:attr/windowTitleStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

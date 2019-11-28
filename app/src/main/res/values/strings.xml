@@ -8,6 +8,7 @@
         <item>@string/section_more</item>
         <item>@string/section_focus</item>
         <item>@string/section_discover</item>
+        <item>@string/section_news</item>
     </string-array>
 
     <string name="app_name">哔哩哔哩</string>
@@ -131,6 +132,7 @@
     <string name="section_more">分区</string>
     <string name="section_bangumi">番剧</string>
     <string name="section_discover">发现</string>
+    <string name="section_news">新闻</string>
     <string name="level_text">LV2</string>
     <string name="vip_message_1">您还不是</string>
     <string name="vip">大会员</string>

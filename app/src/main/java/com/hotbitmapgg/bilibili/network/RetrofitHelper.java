@@ -9,6 +9,7 @@ import com.hotbitmapgg.bilibili.network.api.BiliAppService;
 import com.hotbitmapgg.bilibili.network.api.BiliGoService;
 import com.hotbitmapgg.bilibili.network.api.Im9Service;
 import com.hotbitmapgg.bilibili.network.api.LiveService;
+import com.hotbitmapgg.bilibili.network.api.NewsService;
 import com.hotbitmapgg.bilibili.network.api.RankService;
 import com.hotbitmapgg.bilibili.network.api.SearchService;
 import com.hotbitmapgg.bilibili.network.api.UserService;
@@ -74,6 +75,10 @@ public class RetrofitHelper {
 
     public static BangumiService getBangumiAPI() {
         return createApi(BangumiService.class, ApiConstants.BANGUMI_BASE_URL);
+    }
+
+    public static NewsService getNewsAPI() {
+        return createApi(NewsService.class, ApiConstants.NEWS_BASE_URL);
     }
 
     public static SearchService getSearchAPI() {

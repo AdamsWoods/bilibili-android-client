@@ -10,6 +10,7 @@ import com.hotbitmapgg.bilibili.module.home.attention.HomeAttentionFragment;
 import com.hotbitmapgg.bilibili.module.home.bangumi.HomeBangumiFragment;
 import com.hotbitmapgg.bilibili.module.home.discover.HomeDiscoverFragment;
 import com.hotbitmapgg.bilibili.module.home.live.HomeLiveFragment;
+import com.hotbitmapgg.bilibili.module.home.live.com.hotbitmapgg.bilibili.module.home.news.HomeNewsFragment;
 import com.hotbitmapgg.bilibili.module.home.recommend.HomeRecommendedFragment;
 import com.hotbitmapgg.bilibili.module.home.region.HomeRegionFragment;
 import com.hotbitmapgg.ohmybilibili.R;
@@ -53,6 +54,9 @@ public class HomePagerAdapter extends FragmentPagerAdapter {
                     break;
                 case 5:
                     fragments[position] = HomeDiscoverFragment.newInstance();
+                    break;
+                case 6:
+                    fragments[position] = HomeNewsFragment.newInstance();
                     break;
                 default:
                     break;

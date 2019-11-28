@@ -98,7 +98,6 @@ public abstract class RxLazyFragment extends RxFragment {
                 null : getActivity().getApplicationContext()) : this.activity.getApplicationContext();
     }
 
-
     /**
      * Fragment数据的懒加载
      */
