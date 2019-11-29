@@ -1,5 +1,6 @@
-package com.hotbitmapgg.bilibili.module.home.live.com.hotbitmapgg.bilibili.module.home.news;
+package com.hotbitmapgg.bilibili.module.home.news;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -10,13 +11,17 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.hotbitmapgg.bilibili.adapter.NewsAdapter;
 import com.hotbitmapgg.bilibili.base.RxLazyFragment;
 import com.hotbitmapgg.bilibili.entity.news.NewsInfo;
+import com.hotbitmapgg.bilibili.module.common.BrowserActivity;
 import com.hotbitmapgg.bilibili.network.RetrofitHelper;
+import com.hotbitmapgg.bilibili.utils.ConstantUtil;
 import com.hotbitmapgg.bilibili.utils.SnackbarUtil;
 import com.hotbitmapgg.bilibili.widget.CustomEmptyView;
 import com.hotbitmapgg.ohmybilibili.R;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import butterknife.BindView;
 import rx.android.schedulers.AndroidSchedulers;
@@ -34,7 +39,7 @@ public class HomeNewsFragment extends RxLazyFragment {
 
     private boolean mIsRefreshing = false;
     private NewsAdapter mNewsAdapter;
-    private List<NewsInfo.ResultBean> infoList = new ArrayList<>();
+    private List<NewsInfo.Result> infoList = new ArrayList<>();
 
     public static HomeNewsFragment newInstance() {
         return new HomeNewsFragment();
@@ -56,8 +61,8 @@ public class HomeNewsFragment extends RxLazyFragment {
         if (!isPrepared || !isVisible){
             return ;
         }
-        initRefreshLayout();
         initRecyclerView();
+        initRefreshLayout();
         isPrepared = false;
     }
 
@@ -65,9 +70,15 @@ public class HomeNewsFragment extends RxLazyFragment {
     protected void initRecyclerView() {
         mNewsAdapter = new NewsAdapter(mRecyclerView, infoList);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), VERTICAL, false);
-//        mRecyclerView.setHasFixedSize(true);
+        mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setAdapter(mNewsAdapter);
+        mNewsAdapter.setOnItemClickListener(((position, holder) -> {
+            Intent intent = new Intent(getActivity(), BrowserActivity.class);
+            intent.putExtra(ConstantUtil.EXTRA_TITLE, infoList.get(position).getTitle());
+            intent.putExtra(ConstantUtil.EXTRA_URL, infoList.get(position).getPath());
+            startActivity(intent);
+        }));
         setRecycleNoScroll();
     }
 
@@ -75,6 +86,7 @@ public class HomeNewsFragment extends RxLazyFragment {
     protected void initRefreshLayout() {
         mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
         mSwipeRefreshLayout.post(()->{
+            mIsRefreshing = true;
             mSwipeRefreshLayout.setRefreshing(true);
             loadData();
         });
@@ -86,6 +98,8 @@ public class HomeNewsFragment extends RxLazyFragment {
 
     private void clearData() {
         mIsRefreshing = true;
+        infoList.clear();
+        mNewsAdapter.removeAll();
     }
 
     @Override
@@ -93,20 +107,27 @@ public class HomeNewsFragment extends RxLazyFragment {
         RetrofitHelper.getNewsAPI()
                 .getNews()
                 .compose(bindToLifecycle())
+                .delay(1000, TimeUnit.MILLISECONDS)
+                .map(NewsInfo::getResult)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(newsInfo -> {
-                    infoList.addAll(newsInfo.getData());
-//                    mNewsAdapter.notifyDataSetChanged();
-                    finishTask();
-                }, throwable -> initEmptyView());
+                .subscribe(result -> {
+                    if (result != null && result.size() != 0){
+                        infoList.addAll(result);
+                        finishTask();
+                    }
+                }, throwable -> {
+                    initEmptyView();
+                    System.out.println("-----throwable=" + throwable.getMessage());
+                });
     }
 
     @Override
     protected void finishTask() {
         super.finishTask();
         mSwipeRefreshLayout.setRefreshing(false);
-        mIsRefreshing = false;
+        mNewsAdapter.notifyDataSetChanged();
+        mRecyclerView.scrollToPosition(0);
         hideEmptyView();
     }
 
@@ -120,7 +141,8 @@ public class HomeNewsFragment extends RxLazyFragment {
     }
 
     private void hideEmptyView() {
-
+        mCustomEmptyView.setVisibility(View.GONE);
+        mRecyclerView.setVisibility(View.VISIBLE);
     }
 
     private void setRecycleNoScroll() {

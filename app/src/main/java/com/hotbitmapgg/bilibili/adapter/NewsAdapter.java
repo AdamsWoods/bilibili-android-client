@@ -19,16 +19,12 @@ import java.util.List;
 
 public class NewsAdapter extends AbsRecyclerViewAdapter {
 
-    private List<NewsInfo.ResultBean> infoList;
+    private List<NewsInfo.Result> infoList;
 
-    public NewsAdapter(RecyclerView recyclerView, List<NewsInfo.ResultBean> infoList){
+    public NewsAdapter(RecyclerView recyclerView, List<NewsInfo.Result> infoList){
         super(recyclerView);
         this.infoList = infoList;
     }
-
-//    public void setInfoList(List<NewsInfo.ResultBean> infoList) {
-//        this.infoList = infoList;
-//    }
 
     @NonNull
     @Override
@@ -42,11 +38,11 @@ public class NewsAdapter extends AbsRecyclerViewAdapter {
     public void onBindViewHolder(ClickableViewHolder holder, int position) {
         if (holder instanceof ItemViewHolder) {
             ItemViewHolder itemViewHolder = (ItemViewHolder) holder;
-            NewsInfo.ResultBean newsInfo = infoList.get(position);
+            NewsInfo.Result newsInfo = infoList.get(position);
 
             Glide.with(getContext())
                     .load(newsInfo.getImage())
-                    .centerCrop()
+//                    .centerCrop()
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
                     .placeholder(R.drawable.bili_default_image_tv)
                     .dontAnimate()
@@ -61,6 +57,10 @@ public class NewsAdapter extends AbsRecyclerViewAdapter {
     @Override
     public int getItemCount() {
         return infoList.size();
+    }
+
+    public void removeAll(){
+        this.infoList.clear();
     }
 
     private class ItemViewHolder extends AbsRecyclerViewAdapter.ClickableViewHolder {

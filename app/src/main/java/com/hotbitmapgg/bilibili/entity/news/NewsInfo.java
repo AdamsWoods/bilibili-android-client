@@ -5,7 +5,8 @@ import java.util.List;
 public class NewsInfo {
 
     private int code;
-    private List<ResultBean>  data;
+    private String message;
+    private List<Result> result;
 
     public void setCode(int code) {
         this.code = code;
@@ -15,15 +16,23 @@ public class NewsInfo {
         return code;
     }
 
-    public void setData(List<ResultBean> data) {
-        this.data = data;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
-    public List<ResultBean> getData() {
-        return data;
+    public String getMessage() {
+        return message;
     }
 
-    public static class ResultBean {
+    public void setResult(List<Result> data) {
+        this.result = data;
+    }
+
+    public List<Result> getResult() {
+        return result;
+    }
+
+    public static class Result {
 
         private String path;
         private String image;
